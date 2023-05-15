@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: "Karantina", cursive;
   background-color: #fff;
@@ -45,4 +45,48 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+} */
+
+body {
+  margin: 0;
+  font-family: "Karantina", cursive;
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+}
+
+.title {
+  font-size: 6vw;
+  margin-bottom: 10px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.countdown {
+  display: flex;
+  font-size: 10vw;
+  font-weight: bold;
+  max-width: 90%;
+  text-align: center;
+}
+
+.countdown > div {
+  margin: 0 10px;
+  flex: 1;
+}
+
+.countdown > div::before {
+  content: attr(id);
+  text-transform: capitalize;
+  display: block;
+  font-size: 0.3em;
+  font-weight: normal;
 }
