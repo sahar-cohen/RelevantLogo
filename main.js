@@ -13,10 +13,10 @@ function updateCountdown() {
   const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-  document.getElementById("days").innerText = ימים;
-  document.getElementById("hours").innerText = שעות;
-  document.getElementById("minutes").innerText = דקות;
-  document.getElementById("seconds").innerText = שניות;
+  document.getElementById("ימים").innerText = days;
+  document.getElementById("שעות").innerText = hours;
+  document.getElementById("דקות").innerText = minutes;
+  document.getElementById("שניות").innerText = seconds;
 }
 
 updateCountdown();
