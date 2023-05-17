@@ -16,19 +16,23 @@ body {
 
 .title {
   font-size: 130px;
+  margin-bottom: 20px;
 }
 
 .countdown {
   display: flex;
   font-size: 8rem;
   font-weight: 600;
-  gap: 60px;
 }
 
 .countdown > div {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+}
+
+.countdown > div:not(:first-child) {
+  margin-left: 60px; /* adjust as necessary */
 }
 
 .countdown > div::before {
