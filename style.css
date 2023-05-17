@@ -24,7 +24,7 @@ body {
   display: flex;
   font-size: 5rem;
   font-weight: bold;
-  flex-direction: row;
+  flex-direction: row-reverse;
   gap: 50px;
 }
 
