@@ -12,38 +12,28 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  gap: 30px;
 }
 
 .title {
-  font-size: 70px;
-  font-weight: 400;
-  margin: 0px;
+  font-size: 130px;
 }
 
 .countdown {
   display: flex;
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 600;
-  flex-direction: row-reverse;
-  gap: 50px;
+  gap: 60px;
 }
 
 .countdown > div {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  width: 65px;
-  gap: 5px;
 }
 
 .countdown > div::before {
   content: attr(id);
   text-transform: capitalize;
-  display: block;
   font-size: 35px;
   font-weight: 300;
-}
-
-@media screen and (max-width: 400px) {
 }
