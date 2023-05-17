@@ -16,7 +16,6 @@ body {
 
 .title {
   font-size: 130px;
-  margin-bottom: 20px;
 }
 
 .countdown {
@@ -29,10 +28,11 @@ body {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  width: 100px;
 }
 
 .countdown > div:not(:first-child) {
-  margin-left: 60px; /* adjust as necessary */
+  margin-left: 40px; /* adjust as necessary */
 }
 
 .countdown > div::before {
