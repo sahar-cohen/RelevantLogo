@@ -15,21 +15,21 @@ body {
 }
 
 .title {
-  font-size: 180px;
+  font-size: 240px;
   margin-bottom: 20px;
 }
 
 .countdown {
   display: flex;
-  font-size: 12rem;
-  font-weight: 600;
+  font-size: 16rem;
+  font-weight: 400;
 }
 
 .countdown > div {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  width: 123px;
+  width: 216px;
 }
 
 .countdown > div:not(:first-child) {
@@ -39,7 +39,7 @@ body {
 .countdown > div::before {
   content: attr(id);
   text-transform: capitalize;
-  font-size: 60px;
+  font-size: 90px;
   font-weight: 300;
 }
 
