@@ -42,3 +42,19 @@ body {
   font-size: 60px;
   font-weight: 300;
 }
+
+body.day {
+  background-color: #ffffff; /* Day mode background color */
+  color: #000000; /* Day mode text color */
+  /* font-family: "Assistant", sans-serif; */
+  font-family: "Karantina", cursive;
+}
+
+body.night {
+  background-color: #000000; /* Night mode background color */
+  color: #cbcbcb; /* Night mode text color */
+  /* font-family: "Assistant", sans-serif; */
+  font-family: "Karantina", cursive;
+}
+
+/* Rest of your CSS code ... */
