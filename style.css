@@ -2,8 +2,8 @@ body {
   margin: 0;
   /* font-family: "Assistant", sans-serif; */
   font-family: "Karantina", cursive;
-  background-color: #000000;
-  color: #cbcbcb;
+  background-color: #332fd0;
+  color: #ffffff;
 }
 
 .container {
@@ -12,49 +12,39 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
 
-.title {
-  font-size: 240px;
-  margin-bottom: 20px;
-}
+  .floatingbkg {
+    background-color: #fb2576;
+    padding: 40px 160px;
+    border-radius: 100px;
 
-.countdown {
-  display: flex;
-  font-size: 16rem;
-  font-weight: 400;
-}
+    .title {
+      font-size: 240px;
+      margin-bottom: 20px;
+    }
 
-.countdown > div {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  width: 216px;
-}
+    .countdown {
+      display: flex;
+      font-size: 16rem;
+      font-weight: 400;
+    }
 
-.countdown > div:not(:first-child) {
-  margin-left: 40px; /* adjust as necessary */
-}
+    .countdown > div {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 216px;
+    }
 
-.countdown > div::before {
-  content: attr(id);
-  text-transform: capitalize;
-  font-size: 90px;
-  font-weight: 300;
-}
+    .countdown > div:not(:first-child) {
+      margin-left: 40px; /* adjust as necessary */
+    }
 
-body.day {
-  background-color: #ffffff; /* Day mode background color */
-  color: #000000; /* Day mode text color */
-  /* font-family: "Assistant", sans-serif; */
-  font-family: "Karantina", cursive;
+    .countdown > div::before {
+      content: attr(id);
+      text-transform: capitalize;
+      font-size: 90px;
+      font-weight: 300;
+    }
+  }
 }
-
-body.night {
-  background-color: #000000; /* Night mode background color */
-  color: #cbcbcb; /* Night mode text color */
-  /* font-family: "Assistant", sans-serif; */
-  font-family: "Karantina", cursive;
-}
-
-/* Rest of your CSS code ... */
