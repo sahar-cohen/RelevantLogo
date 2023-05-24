@@ -1,9 +1,12 @@
+@font-face {
+  font-family: "PloniB";
+  src: url("./fonts/ploni-black-aaa.otf");
+  format: ("opentype");
+}
+
 body {
   margin: 0;
-  /* font-family: "Assistant", sans-serif; */
-  font-family: "Karantina", cursive;
-  background-color: #000000;
-  color: #cbcbcb;
+  font-family: "PloniB", cursive;
 }
 
 .container {
@@ -46,15 +49,11 @@ body {
 body.day {
   background-color: #ffffff; /* Day mode background color */
   color: #000000; /* Day mode text color */
-  /* font-family: "Assistant", sans-serif; */
-  font-family: "Karantina", cursive;
 }
 
 body.night {
   background-color: #000000; /* Night mode background color */
   color: #cbcbcb; /* Night mode text color */
-  /* font-family: "Assistant", sans-serif; */
-  font-family: "Karantina", cursive;
 }
 
 /* Rest of your CSS code ... */
