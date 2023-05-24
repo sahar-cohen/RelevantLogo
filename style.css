@@ -13,19 +13,25 @@ body {
   height: 100vh;
 
   .floatingbkg {
-    background-color: #fb2576;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fb2576;
+    box-shadow: 0px 135px 54px rgba(0, 0, 0, 0.03),
+      0px 76px 46px rgba(0, 0, 0, 0.1), 0px 34px 34px rgba(0, 0, 0, 0.17),
+      0px 8px 19px rgba(0, 0, 0, 0.19), 0px 0px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 71px;
     padding: 40px 160px;
-    border-radius: 100px;
 
     .title {
       font-size: 240px;
-      margin-bottom: 20px;
+      font-weight: 900;
     }
 
     .countdown {
       display: flex;
       font-size: 16rem;
-      font-weight: 400;
+      font-weight: 900;
     }
 
     .countdown > div {
