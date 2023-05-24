@@ -11,45 +11,65 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
 
-  .floatingbkg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fb2576;
-    box-shadow: 0px 135px 54px rgba(0, 0, 0, 0.03),
-      0px 76px 46px rgba(0, 0, 0, 0.1), 0px 34px 34px rgba(0, 0, 0, 0.17),
-      0px 8px 19px rgba(0, 0, 0, 0.19), 0px 0px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 71px;
-    padding: 40px 160px;
+.colorbkg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fb2576;
+  box-shadow: 0px 135px 54px rgba(0, 0, 0, 0.03),
+    0px 76px 46px rgba(0, 0, 0, 0.1), 0px 34px 34px rgba(0, 0, 0, 0.17),
+    0px 8px 19px rgba(0, 0, 0, 0.19), 0px 0px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 71px;
+  padding: 40px 160px;
+}
 
-    .title {
-      font-size: 240px;
-      font-weight: 900;
-    }
+.title {
+  font-size: 240px;
+  font-weight: 900;
+}
 
-    .countdown {
-      display: flex;
-      font-size: 16rem;
-      font-weight: 900;
-    }
+.countdown {
+  display: flex;
+  font-size: 16rem;
+  font-weight: 900;
+}
 
-    .countdown > div {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      width: 216px;
-    }
+.countdown > div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 216px;
+}
 
-    .countdown > div:not(:first-child) {
-      margin-left: 40px; /* adjust as necessary */
-    }
+.countdown > div:not(:first-child) {
+  margin-left: 40px;
+}
 
-    .countdown > div::before {
-      content: attr(id);
-      text-transform: capitalize;
-      font-size: 90px;
-      font-weight: 300;
-    }
-  }
+.countdown > div::before {
+  content: attr(id);
+  text-transform: capitalize;
+  font-size: 90px;
+  font-weight: 300;
+}
+
+body.day {
+  background-color: #332fd0;
+  color: #ffffff;
+  font-family: "Karantina", cursive;
+}
+
+body.night {
+  background-color: #fb2576;
+  color: #7b0f38;
+  font-family: "Karantina", cursive;
+}
+
+.colorbkg.day {
+  background: #fb2576; /* Day mode background color for colorbkg */
+}
+
+.colorbkg.night {
+  background: #ffc121; /* Night mode background color for colorbkg */
 }
