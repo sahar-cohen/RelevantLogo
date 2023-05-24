@@ -22,7 +22,7 @@ body {
     0px 76px 46px rgba(0, 0, 0, 0.1), 0px 34px 34px rgba(0, 0, 0, 0.17),
     0px 8px 19px rgba(0, 0, 0, 0.19), 0px 0px 0px rgba(0, 0, 0, 0.2);
   border-radius: 71px;
-  padding: 40px 160px;
+  padding: 40px 160px 70px 160px;
 }
 
 .title {

@@ -37,9 +37,11 @@ function setWebsiteTheme() {
   if (isDay) {
     body.classList.add("night");
     colorbkg.classList.add("night");
+    console.log("Switched to Night Theme"); // Debug message
   } else {
     body.classList.add("day");
     colorbkg.classList.add("day");
+    console.log("Switched to Day Theme"); // Debug message
   }
 
   // Flip the isDay flag for the next run
