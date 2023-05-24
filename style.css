@@ -1,9 +1,8 @@
 body {
   margin: 0;
-  /* font-family: "Assistant", sans-serif; */
   font-family: "Karantina", cursive;
-  background-color: #000000;
-  color: #cbcbcb;
+  background-color: #332fd0;
+  color: #ffffff;
 }
 
 .container {
@@ -14,15 +13,27 @@ body {
   height: 100vh;
 }
 
+.colorbkg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fb2576;
+  box-shadow: 0px 135px 54px rgba(0, 0, 0, 0.03),
+    0px 76px 46px rgba(0, 0, 0, 0.1), 0px 34px 34px rgba(0, 0, 0, 0.17),
+    0px 8px 19px rgba(0, 0, 0, 0.19), 0px 0px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 71px;
+  padding: 40px 160px;
+}
+
 .title {
   font-size: 240px;
-  margin-bottom: 20px;
+  font-weight: 900;
 }
 
 .countdown {
   display: flex;
   font-size: 16rem;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .countdown > div {
@@ -33,7 +44,7 @@ body {
 }
 
 .countdown > div:not(:first-child) {
-  margin-left: 40px; /* adjust as necessary */
+  margin-left: 40px;
 }
 
 .countdown > div::before {
@@ -44,17 +55,21 @@ body {
 }
 
 body.day {
-  background-color: #ffffff; /* Day mode background color */
-  color: #000000; /* Day mode text color */
-  /* font-family: "Assistant", sans-serif; */
+  background-color: #332fd0;
+  color: #ffffff;
   font-family: "Karantina", cursive;
 }
 
 body.night {
-  background-color: #000000; /* Night mode background color */
-  color: #cbcbcb; /* Night mode text color */
-  /* font-family: "Assistant", sans-serif; */
+  background-color: #fb2576;
+  color: #7b0f38;
   font-family: "Karantina", cursive;
 }
 
-/* Rest of your CSS code ... */
+.colorbkg.day {
+  background: #fb2576; /* Day mode background color for colorbkg */
+}
+
+.colorbkg.night {
+  background: #ffc121; /* Night mode background color for colorbkg */
+}

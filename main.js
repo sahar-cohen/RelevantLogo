@@ -26,15 +26,20 @@ setInterval(updateCountdown, 1000);
 let isDay = true;
 
 function setWebsiteTheme() {
-  const body = document.body; // Use body directly
-  // Clear any previous theme classes
-  body.className = "";
+  const body = document.body;
+  const colorbkg = document.querySelector(".colorbkg");
+
+  // Remove previous theme classes
+  body.classList.remove("day", "night");
+  colorbkg.classList.remove("day", "night");
 
   // Switch between day and night every 30 minutes
   if (isDay) {
     body.classList.add("night");
+    colorbkg.classList.add("night");
   } else {
     body.classList.add("day");
+    colorbkg.classList.add("day");
   }
 
   // Flip the isDay flag for the next run
