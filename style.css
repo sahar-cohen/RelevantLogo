@@ -55,21 +55,21 @@ body {
 }
 
 body.day {
-  background-color: #332fd0;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #202328;
   font-family: "Karantina", cursive;
 }
 
 body.night {
-  background-color: #fb2576;
-  color: #7b0f38;
+  background-color: #020409;
+  color: #e7edf2;
   font-family: "Karantina", cursive;
 }
 
 .colorbkg.day {
-  background: #fb2576; /* Day mode background color for colorbkg */
+  background: #f6f8fa; /* Day mode background color for colorbkg */
 }
 
 .colorbkg.night {
-  background: #ffc121; /* Night mode background color for colorbkg */
+  background: #13171e; /* Night mode background color for colorbkg */
 }
