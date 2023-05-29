@@ -52,4 +52,4 @@ function setWebsiteTheme() {
 setWebsiteTheme();
 
 // Then call the function every 30 minutes to check and update the theme
-setInterval(setWebsiteTheme, 1000 * 60); // 30 minutes
+setInterval(setWebsiteTheme, 1000 * 30 * 60); // 30 minutes
