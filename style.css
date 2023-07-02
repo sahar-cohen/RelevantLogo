@@ -104,3 +104,10 @@ span.wifi-bold {
 span.wifi.bold {
   font-weight: 900;
 }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* adjust this value based on your needs */
+}
